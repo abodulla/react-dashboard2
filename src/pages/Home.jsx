@@ -1,7 +1,8 @@
-import React from "react";
 import Header from "../components/common/Header";
 import StatCard from "../components/common/StatCard";
 import SalesHomeChart from "../components/Home/SalesHomeChart";
+import SalesChannelChart from "../components/Home/SalesChannelChart";
+import CategoryDistiributionChart from "../components/Home/CategoryDistiributionChart";
 import { motion } from "framer-motion";
 import { Zap, Users, ShoppingBag, BarChart2 } from "lucide-react";
 
@@ -46,8 +47,10 @@ const Home = () => {
           </motion.div>
 
           {/* CHARTS */}
-          <div className="grid grid-cols-1 gap-8">
+          <div className="grid grid-cols-2 gap-8">
             <SalesHomeChart />
+            <CategoryDistiributionChart />
+            <SalesChannelChart />
           </div>
         </main>
       </div>
