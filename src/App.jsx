@@ -4,6 +4,7 @@ import SideBar from "./components/common/SideBar";
 
 import Home from "./pages/Home";
 import ProductsPage from "./pages/ProductsPage";
+import UsersPage from "./pages/UsersPage";
 import "./index.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<ProductsPage />} />
+        <Route path="/users" element={<UsersPage />} />
       </Routes>
     </div>
   );
